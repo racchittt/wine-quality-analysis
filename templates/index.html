@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="wine.css">
+    <title>Wine Testing</title>
+</head>
+<body>
+    <h1 class = "title">Wine Testing</h1>
+    <h2 class = "heading">Want to know the quality of your wine?</h2>
+    <h2 class = "heading">You've come to the right place</h2>
+    <h3 class = "subtitle">Please input the data of your favorite drink from the label on the bottle</h3>
+    <div class = "form">
+        <form action="/predict" method="POST" class="form-val">
+            <div class="input-form">
+                <label for="fixed_acidity"><b>Fixed acidity</b></label>
+                <br>
+                <input id="fixed_acidity" name="fixed_acidity" type="text" class="input">
+                
+            </div>
+            <div class="input-form">
+                <label for="volatile_acidity"><b>Volatile acidity</b></label>
+                <br>
+                <input id="volatile_acidity" name="volatile_acidity" type="text" class="input">
+            </div>
+            
+            <div class="input-form">
+                <label for="citric_acid"><b>Citric acid</b></label>
+                <br>
+                <input id="citric_acid" name="citric_acid" type="text" class="input">
+            </div>
+            
+            <div class="input-form">
+                <label for="residual_sugar"><b>Residual sugar</b></label>
+                <br>
+                <input id="residual_sugar" name="residual_sugar" type="text" class="input">
+            </div>
+            
+            <div class="input-form">
+                <label for="chlorides"><b>Chlorides</b></label>
+                <br>
+                <input id="chlorides" name="chlorides" type="text" class="input">
+            </div>
+            
+            <div class="input-form">
+                <label for="free_sulfur_dioxide"><b>Free sulfur dioxide</b></label>
+                <br>
+                <input id="free_sulfur_dioxide" name="free_sulfur_dioxide" type="text" class="input">
+            </div>
+            
+            <div class "input-form">
+                <label for="total_sulfur_dioxide"><b>Total sulfur dioxide</b></label>
+                <br>
+                <input id="total_sulfur_dioxide" name="total_sulfur_dioxide" type="text" class="input">
+            </div>
+            
+            <div class="input-form">
+                <label for="density"><b>Density</b></label>
+                <br>
+                <input id="density" name="density" type="text" class="input">
+            </div>
+            
+            <div class="input-form">
+                <label for="pH"><b>pH</b></label>
+                <br>
+                <input id="pH" name="pH" type="text" class="input">
+            </div>
+            
+            <div class="input-form">
+                <label for="sulphates"><b>Sulphates</b></label>
+                <br>
+                <input id="sulphates" name="sulphates" type="text" class="input">
+            </div>
+            
+            <div class="input-form">
+                <label for="alcohol"><b>Alcohol</b></label>
+                <br>
+                <input id="alcohol" name="alcohol" type="text" class="input">
+            </div>
+            <div class="btn">
+                <button type="submit" class="button">Predict Probability</button>
+            </div>
+        </form>
+    </div>
+    <br>
+        {{pred}}<br>
+
+    </div>
+</body>
+</html>
