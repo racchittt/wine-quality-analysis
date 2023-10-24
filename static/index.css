@@ -11,7 +11,6 @@ body {
   background-image: linear-gradient(rgba(12,3,51,0.3), rgba(12,3,51,0.3));
   position: relative;
   padding: 0 5%;
-  display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
